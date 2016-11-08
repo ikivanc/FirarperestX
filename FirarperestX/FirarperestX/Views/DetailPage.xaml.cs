@@ -41,11 +41,12 @@ namespace FirarperestX.Views
 
             //mapIcon1.ZIndex = 0;
 
-            //mapDetail.MapElements.Add(mapIcon1);
+            //mapDetail.MapElements.Add(mapIcon1);          
+        }
 
-
-           
-
+        public async void Button_Click(object sender, EventArgs args)
+        {
+            await this.Navigation.PushModalAsync(new Views.WebViewDetail());
         }
     }
 }

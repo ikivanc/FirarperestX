@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FirarperestX.Views.MenuPage">
+             x:Class="FirarperestX.Views.MenuPage"
+             BackgroundColor="#2e3b44"
+             >
   <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
-  <StackLayout VerticalOptions="FillAndExpand">
+  <StackLayout BackgroundColor="#2e3b44" VerticalOptions="FillAndExpand">
 
     <ListView x:Name="lvMenu" HasUnevenRows="True" BackgroundColor="#455A64">
 

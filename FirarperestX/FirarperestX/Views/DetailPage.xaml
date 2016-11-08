@@ -1,21 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FirarperestX.Views.DetailPage">
-  <Label Text="Detail Page" VerticalOptions="Center" HorizontalOptions="Center" />
+             x:Class="FirarperestX.Views.DetailPage" 
+             >
+  <Label Text="Detail Page" VerticalOptions="Center" HorizontalOptions="Center"  />
   <!--<StackLayout x:Name="detailStack" Padding="10">
     <Image Source="{Binding Thumbnail}" HeightRequest="200" Aspect="AspectFill" />
     <Label Text="{Binding Title}" FontSize="24"  />
   </StackLayout>-->
  
-  <ScrollView x:Name="detailStack" Margin="0,0,0,0">
+  <ScrollView BackgroundColor="#2e3b44" x:Name="detailStack" Margin="0,0,0,0">
 
-    <StackLayout Margin="0,0,0,30">
+    <StackLayout BackgroundColor="#2e3b44" Margin="0,0,0,30">
 
       <Grid >
 
         <Image Source="{Binding Thumbnail}" x:Name="image" Aspect="AspectFill"/>        
-        <Label x:Name="textBlock" HorizontalTextAlignment="Center" Margin="0" Text="{Binding Title}" VerticalTextAlignment="Center" TextColor="White" FontSize="64"/>
+        <BoxView Color="Blue" Opacity="0.5" HorizontalOptions="Fill" VerticalOptions="Fill"></BoxView>
+        <Label x:Name="textBlock" HorizontalTextAlignment="Center" Margin="0" Text="{Binding Title}" VerticalTextAlignment="Center" TextColor="White" FontSize="42"/>
 
       </Grid>
 
@@ -23,29 +25,18 @@
 
         <StackLayout Margin="10,10,0,10" Orientation="Horizontal">
 
-          <Label Text="{Binding City}" FontSize="36" TextColor="White"/>
+          <Label  Text="{Binding City}" HeightRequest="30" FontSize="26" TextColor="White"/>
 
-          <Label Text="," FontSize="36" TextColor="White"/>
+          <Label Text=","  HeightRequest="30"  FontSize="26" TextColor="White"/>
 
-          <Label Text="{Binding Country}" FontSize="36" TextColor="White"/>
+          <Label Text="{Binding Country}"  HeightRequest="30"  FontSize="26" TextColor="White"/>
 
         </StackLayout>
 
         <Label  Text="{Binding Description}" Margin="10,0,10,15" TextColor="White"/>
 
-        <!--<Button Content="View Photos" Width="Auto" HorizontalAlignment="Stretch" Background="#FF00C5FF" Foreground="White" BorderBrush="{x:Null}" Margin="-2,0" Height="70" FontSize="21.333" Click="Button_Click"/>-->
-
+        <Button Text="View Photos" HorizontalOptions="Fill" BackgroundColor="#FF00C5FF" TextColor="White" Margin="-2,0" HeightRequest="70" FontSize="21.333" Clicked="Button_Click"/>
       </StackLayout>
-
-
-
-
-
     </StackLayout>
-
-
-
   </ScrollView>
-
-
 </ContentPage>

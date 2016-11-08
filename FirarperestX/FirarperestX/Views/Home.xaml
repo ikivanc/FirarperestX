@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FirarperestX.Views.Home">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+             x:Class="FirarperestX.Views.Home"
+             BackgroundColor="#2e3b44"
+             >
+  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center"/>
 
-  <Grid RowSpacing="0">
+  <Grid BackgroundColor="#2e3b44" RowSpacing="0">
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto" />
       <RowDefinition Height="*" />
@@ -19,10 +21,11 @@
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
-            <StackLayout Padding="10">
+            <Grid>
               <Image Source="{Binding Thumbnail}" HeightRequest="200" Aspect="AspectFill" />
-              <Label Text="{Binding Title}" FontSize="24"  />
-            </StackLayout>
+              <BoxView Color="Blue" Opacity="0.5" HorizontalOptions="Fill" VerticalOptions="Fill"></BoxView>
+              <Label x:Name="textBlock" HorizontalTextAlignment="Center" Margin="0" Text="{Binding Title}" VerticalTextAlignment="Center" TextColor="White" FontSize="42"/>
+            </Grid>
           </ViewCell>
         </DataTemplate>
       </ListView.ItemTemplate>
