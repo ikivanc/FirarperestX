@@ -48,6 +48,12 @@
     <Compile Include="Views\MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\PageByCountry.xaml.cs">
+      <DependentUpon>PageByCountry.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PageOnMap.xaml.cs">
+      <DependentUpon>PageOnMap.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\WebViewDetail.xaml.cs">
       <DependentUpon>WebViewDetail.xaml</DependentUpon>
     </Compile>
@@ -90,6 +96,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\WebViewDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PageByCountry.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PageOnMap.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

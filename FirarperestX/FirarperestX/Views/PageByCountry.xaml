@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirarperestX.Views.PageByCountry">
+  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+
+
+
+  <ListView
+      x:Name="listviewPhotos"
+       IsGroupingEnabled="true"
+      GroupDisplayBinding="{ Binding Key}"
+      GroupShortNameBinding ="{ Binding Key}"
+      ItemTapped="onTapped"
+      HasUnevenRows="true"
+      Grid.Row="1">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <Grid>
+            <Image Source="{Binding Thumbnail}" HeightRequest="200" Aspect="AspectFill" />
+            <BoxView Color="Blue" Opacity="0.5" HorizontalOptions="Fill" VerticalOptions="Fill"></BoxView>
+            <Label x:Name="textBlock" HorizontalTextAlignment="Center" Margin="0" Text="{Binding Title}" VerticalTextAlignment="Center" TextColor="White" FontSize="42"/>
+          </Grid>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+
+
+
+</ContentPage>
