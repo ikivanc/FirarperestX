@@ -4,6 +4,9 @@ Firarperest is a Cross Platform Mobile Application with Xamarin to showcase my P
 This project converted from
 [Firarperest - Native Universal Windows Platform Photo Portfolio Application](https://github.com/ikivanc/Firarperest)
 
+### Results
+<img src="images/firarperestSS.png" alt="Firarperest Xamarin Application Screenshot">
+
 ## Prerequisites
 1. You must have Visual Studio 2015 or Visual Studio 2017 and the Xamarin platform installed on your PC.
 
@@ -21,7 +24,3 @@ The next steps depend on whether you just want to deploy the sample or you want 
 
 ### Deploying and running the sample
 - To debug the sample and then run it, press F5 or select Debug >  Start Debugging. To run the sample without debugging, press Ctrl+F5 or select Debug > Start Without Debugging. 
-
-### Results
-<img src="images/firarperestSS.png" alt="Firarperest Xamarin Application Screenshot">
-
